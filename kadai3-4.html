@@ -24,14 +24,9 @@
 
                 // 配列の内容を項目毎に出力
                 // ここにコードを書く
-                console.log("商品番号: "+items[0].id+", 商品名: "+items[0].name+", 金額: "+items[0].price+", 在庫表: "+items[0].stock);
-                console.log("商品番号: "+items[1].id+", 商品名: "+items[1].name+", 金額: "+items[1].price+", 在庫表: "+items[1].stock);
-                console.log("商品番号: "+items[2].id+", 商品名: "+items[2].name+", 金額: "+items[2].price+", 在庫表: "+items[2].stock);
-                console.log("商品番号: "+items[3].id+", 商品名: "+items[3].name+", 金額: "+items[3].price+", 在庫表: "+items[3].stock);
-                console.log("商品番号: "+items[4].id+", 商品名: "+items[4].name+", 金額: "+items[4].price+", 在庫表: "+items[4].stock);
-                console.log("商品番号: "+items[5].id+", 商品名: "+items[5].name+", 金額: "+items[5].price+", 在庫表: "+items[5].stock);
-                console.log("商品番号: "+items[6].id+", 商品名: "+items[6].name+", 金額: "+items[6].price+", 在庫表: "+items[6].stock);
-                console.log("商品番号: "+items[7].id+", 商品名: "+items[7].name+", 金額: "+items[7].price+", 在庫表: "+items[7].stock);
+                for(let i = 0;i < items.length;i++){
+                    console.log("商品番号: "+items[i].id+", 商品名: "+items[i].name+", 金額: "+items[i].price+", 在庫表: "+items[i].stock);
+                }
                 console.log(""); // 空行の出力
             }
 
