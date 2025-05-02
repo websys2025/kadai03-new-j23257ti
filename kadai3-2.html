@@ -9,11 +9,12 @@
             function sum(a) { // 引数は配列
                 let s = 0; // 合計値の計算用
                 // 配列を参照して合計値を計算する処理
-                return s;  // 戻り値はs
-            }
-            
+                for(let i = 0; i < a.length; i++){
+                    s += a[i];
+                }
+                return s;  // 戻り値はs            
             let b = [10, 8, 14, 15];
-            console.log(); // 合計値を計算し表示する処理
+            console.log(sum(b)); // 合計値を計算し表示する処理
         </script>
     </body>
 </html>

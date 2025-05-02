@@ -24,12 +24,78 @@
 
                 // 配列の内容を項目毎に出力
                 // ここにコードを書く
+                for(let i = 0;i < items.length;i++){
+                    console.log("商品番号: "+items[i].id+", 商品名: "+items[i].name+", 金額: "+items[i].price+", 在庫表: "+items[i].stock);
+                }
                 console.log(""); // 空行の出力
             }
 
             // 商品購入の関数
             function buyItem(no) {
                 // ここにコードを書く
+                if(no > items.length || 1 > no){
+                    console.log(no+" :指定された商品番号は存在しません。1-8で選択してください。");
+                    return;
+                }
+                console.log("商品番号: "+items[no-1].id+", 商品名: "+items[no-1].name+"を購入します。");
+                switch(no){
+                    case 1:
+                        items[0].stock -= 1
+                        if(items[0].stock < 0){
+                            console.log("在庫がありません");
+                            items[0].stock = 0;
+                        }
+                    break;
+                    case 2:
+                        items[1].stock -= 1
+                        if(items[1].stock < 0){
+                            console.log("在庫がありません");
+                            items[1].stock = 0;
+                        }
+                    break;
+                    case 3:
+                        items[2].stock -= 1
+                        if(items[2].stock < 0){
+                            console.log("在庫がありません");
+                            items[2].stock = 0;
+                        }
+                    break;
+                    case 4:
+                        items[3].stock -= 1
+                        if(items[3].stock < 0){
+                            console.log("在庫がありません");
+                            items[3].stock = 0;
+                        }
+                    break;
+                    case 5:
+                        items[4].stock -= 1
+                        if(items[4].stock < 0){
+                            console.log("在庫がありません");
+                            items[4].stock = 0;
+                        }
+                    break;
+                    case 6:
+                        items[5].stock -= 1
+                        if(items[5].stock < 0){
+                            console.log("在庫がありません");
+                            items[5].stock = 0;
+                        }
+                    break;
+                    case 7:
+                        items[6].stock -= 1
+                        if(items[6].stock < 0){
+                            console.log("在庫がありません");
+                            items[6].stock = 0;
+                        }
+                    break;
+                    case 8:
+                        items[7].stock -= 1
+                        if(items[7].stock < 0){
+                            console.log("在庫がありません");
+                            items[7].stock = 0;
+                        }
+                    break;
+                }
                 showItemList(); // 商品一覧の表示関数呼び出し
             }
 
